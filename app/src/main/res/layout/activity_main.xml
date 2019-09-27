@@ -18,6 +18,15 @@
             android:layout_height="173dp"
             android:layout_gravity="center|fill"
             app:srcCompat="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Approve or deny car at gate" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

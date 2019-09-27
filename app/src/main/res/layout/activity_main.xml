@@ -20,12 +20,28 @@
             app:srcCompat="@drawable/icon" />
 
         <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CAR DETECTED"
+            android:textSize="25dp"
+            android:textColor="@color/red" />
+
+        <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:gravity="center"
             android:text="Approve or deny car at gate" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:layout_gravity="center|fill"
+            app:srcCompat="@drawable/bmw" />
 
     </LinearLayout>
 

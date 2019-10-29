@@ -20,6 +20,20 @@
             app:srcCompat="@drawable/icon" />
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Raspberry IP Address" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="192.168.1.28:21567" />
+
+        <TextView
             android:id="@+id/carDetection"
             android:layout_width="match_parent"
             android:layout_height="43dp"
@@ -33,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="57dp"
             android:gravity="center"
-            android:text="Provided is a live photo of the vehicle detected. Please choose how you would like to proceed"
+            android:text="Provided is a live photo of the vehicle detected. Please choose how you would like to proceed."
             android:textColor="@color/black"
             android:textSize="15dp" />
 

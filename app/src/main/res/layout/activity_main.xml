@@ -82,7 +82,7 @@
                 android:layout_width="122dp"
                 android:layout_height="26dp"
                 android:layout_weight="1"
-                android:background="#e60000"
+                android:background="#cc0000"
                 android:text="Deny" />
         </LinearLayout>
 

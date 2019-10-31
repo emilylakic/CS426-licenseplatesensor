@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
     TextView displayAnswer;
     boolean carApproaches;
     ImageView carDisplay;
-    Socket myAppSocket = null;
-    public static String wifiModuleIp = "";
-    public static int wifiModulePort = 0;
-    public static String CMD = "0";
+    //Socket myAppSocket = null;
+   // public static String wifiModuleIp = "";
+   // public static int wifiModulePort = 0;
+    //public static String CMD = "0";
 
     @SuppressLint("SetTextI18n")
 
@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        approve = (Button) findViewById(R.id.approve);
-        deny = (Button) findViewById(R.id.deny);
+       // approve = (Button) findViewById(R.id.approve);
+       // deny = (Button) findViewById(R.id.deny);
 
-        ipAddress = (EditText) findViewById(R.id.ipAddress);
+       /// ipAddress = (EditText) findViewById(R.id.ipAddress);
 
         displayAnswer = findViewById(R.id.carDetection);
         carDisplay = findViewById(R.id.car);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public class Soket_AsyncTask extends AsyncTask<Void,Void,Void> {
+    /*public class Soket_AsyncTask extends AsyncTask<Void,Void,Void> {
 
         Socket socket;
 
@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
                 dataOutputStream.close();
                 socket.close();
             } catch (UnknownHostException e) {e.printStackTrace();}catch (IOException e){e.printStackTrace();}
-            return null;
+            return null; //9:26
         }
-    }
+    }*/
 }
 
 

@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -34,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toast.makeText(MainActivity.this, "Firebase Connection Success", Toast.LENGTH_LONG).show();
+
        // approve = (Button) findViewById(R.id.approve);
        // deny = (Button) findViewById(R.id.deny);
 
@@ -51,24 +54,6 @@ public class MainActivity extends AppCompatActivity {
             carDisplay.setVisibility(View.VISIBLE);
         }
     }
-
-    /*public class Soket_AsyncTask extends AsyncTask<Void,Void,Void> {
-
-        Socket socket;
-
-        @Override
-        protected Void doInBackground(Void... params) {
-            try {
-                InetAddress inetAddress = InetAddress.getByName(MainActivity.wifiModuleIp);
-                socket = new java.net.Socket(inetAddress,MainActivity.wifiModulePort);
-                DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
-                dataOutputStream.writeBytes(CMD);
-                dataOutputStream.close();
-                socket.close();
-            } catch (UnknownHostException e) {e.printStackTrace();}catch (IOException e){e.printStackTrace();}
-            return null; //9:26
-        }
-    }*/
 }
 
 

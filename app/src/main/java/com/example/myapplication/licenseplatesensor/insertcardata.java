@@ -34,15 +34,14 @@ public class insertcardata extends AppCompatActivity {
             @Override
                 public void onClick(View view) {
                 int ageA = Integer.parseInt(txtAge.getText().toString().trim());
-                Float hit = Float.parseFloat(txtHeight.getText().toString().trim());
+                Float hit = Float.parseFloat((txtHeight.getText().toString().trim()));
                 Long phn = Long.parseLong(txtPhone.getText().toString().trim());
-
                 member.setName(txtName.getText().toString().trim());
                 member.setAge(ageA);
                 member.setHt(hit);
                 member.setPh(phn);
                 reff.push().setValue(member);
-                Toast.makeText(insertcardata.this, "data inserted successfully", Toast.LENGTH_LONG).show();
+                Toast.makeText(insertcardata.this, "success", Toast.LENGTH_LONG).show();
             }
         });
     }

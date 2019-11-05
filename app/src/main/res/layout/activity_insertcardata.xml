@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#462c33"
     tools:context=".insertcardata">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/newbg" />
 
     <TextView
         android:id="@+id/nameBlockText"
@@ -86,37 +94,12 @@
         android:ems="10"
         android:inputType="textPersonName" />
 
-
-    <!--<EditText
-        android:id="@+id/txtPhone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginLeft="100dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Phone" />
-
-
-    <EditText
-        android:id="@+id/txtHeight"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginLeft="100dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="Height" />-->
-
-
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:layout_marginRight="160dp"
-        android:layout_marginLeft="160dp"
-        android:text="Save" />
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
 </RelativeLayout>

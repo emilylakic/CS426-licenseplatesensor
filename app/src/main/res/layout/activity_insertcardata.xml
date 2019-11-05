@@ -12,16 +12,17 @@
         android:layout_marginTop="-10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/newbg" />
+        app:srcCompat="@drawable/lpdbg" />
 
     <TextView
         android:id="@+id/nameBlockText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
+        android:layout_marginTop="350dp"
         android:layout_marginRight="55dp"
         android:layout_marginLeft="55dp"
         android:textSize="15sp"
+        android:textColor="@color/white"
         android:text="Name:" />
 
     <EditText
@@ -29,39 +30,43 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:textColor="@color/white"
         android:layout_marginRight="100dp"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="335dp"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/plateBlockText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="7dp"
-        android:layout_marginLeft="7dp"
+        android:layout_marginTop="379dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
         android:textSize="15sp"
-        android:text="License Plate:" />
+        android:textColor="@color/white"
+        android:text="Plate:" />
 
     <EditText
         android:id="@+id/plateNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="360dp"
         android:layout_marginRight="100dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/carModelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="406dp"
         android:layout_marginRight="28dp"
         android:layout_marginLeft="28dp"
         android:textSize="15sp"
+        android:textColor="@color/white"
         android:text="Car Model:" />
 
     <EditText
@@ -69,19 +74,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="387dp"
         android:layout_marginRight="100dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/carColorText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="178dp"
+        android:layout_marginTop="433dp"
         android:layout_marginRight="33dp"
         android:layout_marginLeft="33dp"
         android:textSize="15sp"
+        android:textColor="@color/white"
         android:text="Car Color:" />
 
     <EditText
@@ -89,16 +96,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="100dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginTop="414dp"
         android:layout_marginRight="100dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="470dp"
         android:layout_centerHorizontal="true"
         android:text="Submit" />
 

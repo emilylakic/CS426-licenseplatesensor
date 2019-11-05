@@ -3,9 +3,9 @@ package com.example.myapplication.licenseplatesensor;
 public class Member {
 
     private String Name;
-    private Integer Age;
-    private Long ph;
-    private Float ht;
+    private Integer Plate;
+    private String Model;
+    private String Color;
 
     public Member() {
 
@@ -19,27 +19,27 @@ public class Member {
         Name = name;
     }
 
-    public Integer getAge() {
-        return Age;
+    public Integer getPlate() {
+        return Plate;
     }
 
-    public void setAge(Integer age) {
-        Age = age;
+    public void setPlate(Integer age) {
+        Plate = age;
     }
 
-    public Long getPh() {
-        return ph;
+    public String getModel() {
+        return Model;
     }
 
-    public void setPh(Long ph) {
-        this.ph = ph;
+    public void setModel(String model) {
+        Model = model;
     }
 
-    public Float getHt() {
-        return ht;
+    public String getColor() {
+        return Color;
     }
 
-    public void setHt(Float ht) {
-        this.ht = ht;
+    public void setColor(String color) {
+        Color = color;
     }
 }

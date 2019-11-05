@@ -11,25 +11,53 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="40dp"
         android:inputType="textPersonName"
         android:text="Name" />
 
     <EditText
-        android:id="@+id/txtAge"
+        android:id="@+id/plateNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
         android:ems="10"
         android:inputType="number"
         android:text="Age" />
 
+    <EditText
+        android:id="@+id/carModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="120dp"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <EditText
+        android:id="@+id/carColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="160dp"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+
+    <!--<EditText
         android:id="@+id/txtPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
         android:ems="10"
         android:inputType="number"
         android:text="Phone" />
@@ -40,9 +68,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Height" />
+        android:text="Height" />-->
 
 
     <Button
@@ -50,5 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginLeft="160dp"
         android:text="Save" />
 </RelativeLayout>

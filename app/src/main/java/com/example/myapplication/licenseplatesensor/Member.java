@@ -3,7 +3,7 @@ package com.example.myapplication.licenseplatesensor;
 public class Member {
 
     private String Name;
-    private Integer Plate;
+    private String Plate;
     private String Model;
     private String Color;
 
@@ -17,14 +17,6 @@ public class Member {
 
     public void setName(String name) {
         Name = name;
-    }
-
-    public Integer getPlate() {
-        return Plate;
-    }
-
-    public void setPlate(Integer age) {
-        Plate = age;
     }
 
     public String getModel() {
@@ -41,5 +33,13 @@ public class Member {
 
     public void setColor(String color) {
         Color = color;
+    }
+
+    public String getPlate() {
+        return Plate;
+    }
+
+    public void setPlate(String plate) {
+        Plate = plate;
     }
 }

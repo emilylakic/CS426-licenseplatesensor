@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".insertcardata">
 
+    <TextView
+        android:id="@+id/nameBlockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
+        android:textSize="15sp"
+        android:text="Name:" />
+
     <EditText
         android:id="@+id/txtName"
         android:layout_width="wrap_content"
@@ -14,41 +24,67 @@
         android:layout_marginRight="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="40dp"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/plateBlockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="15sp"
+        android:text="License Plate:" />
 
     <EditText
         android:id="@+id/plateNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="80dp"
         android:layout_marginRight="100dp"
-        android:layout_marginLeft="100dp"
         android:ems="10"
-        android:inputType="number"
-        android:text="Age" />
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/carModelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginLeft="28dp"
+        android:textSize="15sp"
+        android:text="Car Model:" />
 
     <EditText
         android:id="@+id/carModel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginRight="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="120dp"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:layout_marginRight="100dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/carColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="178dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginLeft="33dp"
+        android:textSize="15sp"
+        android:text="Car Color:" />
 
     <EditText
         android:id="@+id/carColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginRight="100dp"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="160dp"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:layout_marginRight="100dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
 
 
     <!--<EditText

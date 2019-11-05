@@ -22,7 +22,7 @@ public class insertcardata extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insertcardata);
-        Toast.makeText(insertcardata.this, "Firebase Connection Success", Toast.LENGTH_LONG).show();
+        //Toast.makeText(insertcardata.this, "Firebase Connection Success", Toast.LENGTH_LONG).show();
         txtName = (EditText)findViewById(R.id.txtName);
         plateNumber = (EditText)findViewById(R.id.plateNumber);
         carModel = (EditText)findViewById(R.id.carModel);
@@ -35,17 +35,18 @@ public class insertcardata extends AppCompatActivity {
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick(View view) {
-                int licensePlate = Integer.parseInt(plateNumber.getText().toString().trim());
+                //int licensePlate = Integer.parseInt(plateNumber.getText().toString().trim());
                 //Float hit = Float.parseFloat((txtHeight.getText().toString().trim()));
                //Long phn = Long.parseLong(txtPhone.getText().toString().trim());
                 member.setName(txtName.getText().toString().trim());
-                member.setPlate(licensePlate);
+                //member.setPlate(licensePlate);
+                member.setPlate(plateNumber.getText().toString().trim());
                 member.setModel(carModel.getText().toString().trim());
                 member.setColor(carColor.getText().toString().trim());
                 //member.setHt(hit);
                 //member.setPh(phn);
                 reff.push().setValue(member);
-                Toast.makeText(insertcardata.this, "success", Toast.LENGTH_LONG).show();
+                Toast.makeText(insertcardata.this, "New Member Added", Toast.LENGTH_LONG).show();
             }
         });
     }

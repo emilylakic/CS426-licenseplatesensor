@@ -2,6 +2,7 @@ package com.example.myapplication.licenseplatesensor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,40 +14,46 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class insertcardata extends AppCompatActivity {
 
-    EditText txtName, plateNumber, txtPhone, txtHeight, carColor, carModel;
+    EditText txtName, plateNumber, carColor, carModel;
     Button btnSave;
+    Button nextPage;
     DatabaseReference reff;
+    DatabaseReference reff2;
     Member member;
+    LoadImage loadimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insertcardata);
+        nextPage = (Button) findViewById(R.id.nextPage);
         //Toast.makeText(insertcardata.this, "Firebase Connection Success", Toast.LENGTH_LONG).show();
         txtName = (EditText)findViewById(R.id.txtName);
         plateNumber = (EditText)findViewById(R.id.plateNumber);
         carModel = (EditText)findViewById(R.id.carModel);
         carColor = (EditText)findViewById(R.id.carColor);
-        //txtPhone = (EditText)findViewById(R.id.txtPhone);
-        //txtHeight = (EditText)findViewById(R.id.txtHeight);
         btnSave = (Button)findViewById(R.id.btnSave);
         member = new Member();
         reff = FirebaseDatabase.getInstance().getReference().child("Member");
+        reff2 = FirebaseDatabase.getInstance().getReference().child("Unrecognized");
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override
                 public void onClick(View view) {
-                //int licensePlate = Integer.parseInt(plateNumber.getText().toString().trim());
-                //Float hit = Float.parseFloat((txtHeight.getText().toString().trim()));
-               //Long phn = Long.parseLong(txtPhone.getText().toString().trim());
                 member.setName(txtName.getText().toString().trim());
-                //member.setPlate(licensePlate);
                 member.setPlate(plateNumber.getText().toString().trim());
                 member.setModel(carModel.getText().toString().trim());
                 member.setColor(carColor.getText().toString().trim());
-                //member.setHt(hit);
-                //member.setPh(phn);
                 reff.push().setValue(member);
                 Toast.makeText(insertcardata.this, "New Member Added", Toast.LENGTH_LONG).show();
+            }
+        });
+        nextPage.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                Intent intent = new Intent(insertcardata.this, LoadImage.class);
+
+                startActivity(intent);
             }
         });
     }

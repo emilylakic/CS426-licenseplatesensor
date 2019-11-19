@@ -19,8 +19,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginLeft="55dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
         android:textSize="15sp"
         android:textColor="@color/white"
         android:text="Name:" />
@@ -31,8 +31,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:textColor="@color/white"
-        android:layout_marginRight="100dp"
-        android:layout_marginLeft="100dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginLeft="115dp"
         android:layout_marginTop="285dp"
         android:inputType="textPersonName" />
 
@@ -41,8 +41,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="329dp"
-        android:layout_marginRight="55dp"
-        android:layout_marginLeft="55dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
         android:textSize="15sp"
         android:textColor="@color/white"
         android:text="Plate:" />
@@ -51,9 +51,9 @@
         android:id="@+id/plateNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="115dp"
         android:layout_marginTop="310dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginRight="115dp"
         android:ems="10"
         android:textColor="@color/white"
         android:inputType="textPersonName" />
@@ -63,8 +63,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="356dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginLeft="43dp"
         android:textSize="15sp"
         android:textColor="@color/white"
         android:text="Car Model:" />
@@ -73,9 +73,9 @@
         android:id="@+id/carModel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="115dp"
         android:layout_marginTop="337dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginRight="115dp"
         android:ems="10"
         android:textColor="@color/white"
         android:inputType="textPersonName" />
@@ -85,8 +85,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="383dp"
-        android:layout_marginRight="33dp"
-        android:layout_marginLeft="33dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginLeft="48dp"
         android:textSize="15sp"
         android:textColor="@color/white"
         android:text="Car Color:" />
@@ -95,27 +95,29 @@
         android:id="@+id/carColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
+        android:layout_marginLeft="115dp"
         android:layout_marginTop="364dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginRight="115dp"
         android:ems="10"
         android:textColor="@color/white"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnSave"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="405dp"
+        android:layout_marginTop="410dp"
         android:layout_centerHorizontal="true"
+        android:background="#FFFFFF"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
         android:text="Submit" />
 
     <Button
         android:id="@+id/nextPage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="470dp"
+        android:background="#FFFFFF"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="500dp"
         android:layout_centerHorizontal="true"
-        android:text="Unrecognized Vehicle? Click here" />
+        android:text="Click Here" />
 
 </RelativeLayout>

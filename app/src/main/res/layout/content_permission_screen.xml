@@ -20,7 +20,7 @@
         android:id="@+id/plate_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="2dp"
         android:gravity="center"
         android:text="PlateNumber"
         android:textSize="20sp"
@@ -73,7 +73,7 @@
     <ImageButton
         android:id="@+id/yes_button"
         android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginTop="0dp"
         android:layout_marginEnd="89dp"
         android:src="@drawable/yes"
@@ -85,7 +85,7 @@
     <ImageButton
         android:id="@+id/no_button"
         android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:layout_marginStart="89dp"
         android:layout_marginTop="0dp"
         android:src="@drawable/no"

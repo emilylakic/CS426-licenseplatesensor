@@ -1,5 +1,6 @@
 package com.example.myapplication.licenseplatesensor;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.bumptech.glide.Glide;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -39,6 +41,16 @@ public class PermissionScreen extends AppCompatActivity {
         yes_button = findViewById(R.id.yes_button);
         no_button = findViewById(R.id.no_button);
 
+        no_button.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+
+                Toast.makeText(PermissionScreen.this, "Vehicle Denied Entry", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(PermissionScreen.this, LoadImage.class);
+
+                startActivity(intent);
+            }
+        });
 
         plate_number.setText(Objects.requireNonNull(getIntent().getExtras()).getString("plates"));
         color.setText(getIntent().getExtras().getString("color"));
@@ -55,12 +67,12 @@ public class PermissionScreen extends AppCompatActivity {
         });
 
 
-        no_button.setOnClickListener(new View.OnClickListener() {
+       /* no_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
-        });
+        });*/
 
     }
 

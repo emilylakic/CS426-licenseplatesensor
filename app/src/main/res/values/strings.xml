@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">licenseplatesensor</string>
+    <string name="app_name">License Plate Sensor</string>
+    <string name="title_activity_permission_screen">Registration</string>
 </resources>

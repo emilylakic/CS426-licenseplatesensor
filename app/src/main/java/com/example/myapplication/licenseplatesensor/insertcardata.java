@@ -20,14 +20,12 @@ public class insertcardata extends AppCompatActivity {
     DatabaseReference reff;
     DatabaseReference reff2;
     Member member;
-    LoadImage loadimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insertcardata);
         nextPage = (Button) findViewById(R.id.nextPage);
-        //Toast.makeText(insertcardata.this, "Firebase Connection Success", Toast.LENGTH_LONG).show();
         txtName = (EditText)findViewById(R.id.txtName);
         plateNumber = (EditText)findViewById(R.id.plateNumber);
         carModel = (EditText)findViewById(R.id.carModel);

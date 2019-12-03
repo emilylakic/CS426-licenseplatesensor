@@ -97,7 +97,7 @@ public class PermissionScreen extends AppCompatActivity {
                     }
                 });
 
-                Toast.makeText(PermissionScreen.this, "Open Garage", Toast.LENGTH_LONG).show();
+                Toast.makeText(PermissionScreen.this, "Finish", Toast.LENGTH_LONG).show();
             }
         });
 

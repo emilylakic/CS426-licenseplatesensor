@@ -11,12 +11,12 @@ public class PlateNumberModel {
     public PlateNumberModel() {
     }
 
-    public PlateNumberModel(String color, String make, String model, String plate /*, String URL*/) {
+    public PlateNumberModel(String color, String make, String model, String plate, String URL) {
         this.color = color;
         this.make = make;
         this.model = model;
         this.plate = plate;
-        //this.URL = URL;
+        this.URL = URL;
     }
 
     public String getColor() {

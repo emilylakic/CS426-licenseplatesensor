@@ -66,7 +66,7 @@ public class LoadImage extends AppCompatActivity {
         registered_member.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-
+                platesList.clear();
 
                 for (DataSnapshot snapshot : dataSnapshot.getChildren())
                 {

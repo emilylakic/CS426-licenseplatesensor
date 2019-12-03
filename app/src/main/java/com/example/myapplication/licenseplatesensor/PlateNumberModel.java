@@ -35,6 +35,22 @@ public class PlateNumberModel {
         return plate;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setPlate(String plate) {
+        this.plate = plate;
+    }
+
     public String getURL() {
         return URL;
     }

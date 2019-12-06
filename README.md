@@ -1,3 +1,4 @@
 ## CS426 License Plate Sensor Android App
 **How to Run**
-> Open AVD Manager and choose a device
+> *If using Simulator* 
+> Open AVD Manager and create a Virtual Device

@@ -35,9 +35,12 @@ public class LoadImage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_load_image);
+        //Array list for license plates
         platesList = new ArrayList<>();
+        //Must define button
         backButton = (Button) findViewById(R.id.backButton);
-        //Adapter setup
+
+        //Adapter Setup
         progressBar = findViewById(R.id.progress_bar);
         recyclerView = findViewById(R.id.plateNumberList);
         layoutManager = new LinearLayoutManager(this);
@@ -47,8 +50,10 @@ public class LoadImage extends AppCompatActivity {
         mInstance = DataBaseInstance.getInstance();
         registered_member = mInstance.database.child("LoadImage");
 
+        //Shows progress bar
         showProgressBar(true);
 
+        //Takes user back to main screen of application
         backButton.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -59,6 +64,7 @@ public class LoadImage extends AppCompatActivity {
             }
         });
 
+        //For a registered member, take data snapshot and references PlateNumberModel to add that specific model of vehicle
         registered_member.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -87,7 +93,7 @@ public class LoadImage extends AppCompatActivity {
 
 
     }
-
+    //Shows Progress Bar method
     public void showProgressBar(boolean visibility){
         progressBar.setVisibility(visibility ? View.VISIBLE : View.INVISIBLE);
     }

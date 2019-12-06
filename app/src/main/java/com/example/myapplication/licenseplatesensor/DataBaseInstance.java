@@ -9,11 +9,13 @@ class DataBaseInstance {
     public DatabaseReference database;
     public static DatabaseReference myRef;
 
+    //Database Instance from Firebase Console
     private DataBaseInstance() {
         database = FirebaseDatabase.getInstance().getReference();
         //myRef = database.getReference("Member");
     }
 
+    //Get Instance function
     static DataBaseInstance getInstance()
     {
         if(mInstance == null)

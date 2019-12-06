@@ -1,5 +1,6 @@
 package com.example.myapplication.licenseplatesensor;
 
+//This class receives data from the Android device to display on the database
 public class Member {
 
     //Sets objects for the name, plate number, model, and color of the vehicle inputted by the user
